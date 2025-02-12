@@ -1,5 +1,7 @@
-class calculator(ABC):
+from abc import ABC,abstractmethod
 
+class calculator(ABC):
+    @abstractmethod
 
     def add(a,b):
         pass
