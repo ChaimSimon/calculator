@@ -1,28 +1,29 @@
-from abc import ABC,abstractmethod
+from abc import ABC, abstractmethod
+
 
 class calculator(ABC):
     @abstractmethod
-
-    def add(self,a,b):
+    def add(self, a, b):
         return a + b
-        
-    def sub(self,a,b):
+
+    def sub(self, a, b):
         return a - b
 
-    def mul(self,a,b):
+    def mul(self, a, b):
         pass
-    
-    def mul(a,b):
+
+    def mul(self, a, b):
         x = int(input("enter a number"))
         y = int(input("enter a number"))
         c = 0
         for i in range(y):
             c += x
         return c
-        
-    def pow(self,a,b):
+
+    def pow(self, a, b):
         pass
-    def div(a,b):
+
+    def div(self, a, b):
         x = int(input("enter a number"))
         y = int(input("enter a number"))
         c = x
@@ -32,11 +33,5 @@ class calculator(ABC):
             d += 1
         return d
 
-    def root(self,a,b):
+    def root(self, a, b):
         pass
-        
-    
-        
-        
-          
-    
