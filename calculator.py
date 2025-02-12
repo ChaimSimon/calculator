@@ -4,7 +4,7 @@ class calculator(ABC):
     @abstractmethod
 
     def add(self,a,b):
-        return a+b
+        return a + b
         
     def sub(self,a,b):
         pass
