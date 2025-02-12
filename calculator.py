@@ -3,22 +3,22 @@ from abc import ABC,abstractmethod
 class calculator(ABC):
     @abstractmethod
 
-    def add(a,b):
-        pass
+    def add(self,a,b):
+        return a+b
         
-    def sub(a,b):
+    def sub(self,a,b):
         pass
     
-    def mul(a,b):
+    def mul(self,a,b):
         pass
         
-    def div(a,b):
+    def div(self,a,b):
         pass
         
-    def pow(a,b):
+    def pow(self,a,b):
         pass
         
-    def root(a,b):
+    def root(self,a,b):
         pass
         
     
