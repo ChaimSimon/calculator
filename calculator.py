@@ -7,7 +7,7 @@ class calculator(ABC):
         return a + b
         
     def sub(self,a,b):
-        pass
+        return a - b
     
     def mul(self,a,b):
         pass
