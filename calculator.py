@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class calculator(ABC):
+class Calculator(ABC):
     @abstractmethod
     def add(self, a, b):
         return a + b
@@ -19,9 +19,14 @@ class calculator(ABC):
         for i in range(y):
             c += x
         return c
+    @staticmethod
+    def pow(basis, appraiser):
+        result = 1
+        while appraiser:
+            result *= basis
+            appraiser -= 1
+        return result
 
-    def pow(self, a, b):
-        pass
 
     def div(self, a, b):
         x = int(input("enter a number"))
@@ -35,3 +40,6 @@ class calculator(ABC):
 
     def root(self, a, b):
         pass
+
+
+print(Calculator.pow(2,5))
